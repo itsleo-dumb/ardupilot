@@ -27,8 +27,8 @@ This document describes the creation of a custom ArduPilot board called "LeoH743
 ## Hardware Features
 
 ### IMUs
-- Primary: ICM42688P or MPU6000 on SPI1
-- Secondary: ICM20602 or ICM42605 on SPI4
+- Primary: ICM42688P on SPI1
+- Secondary: ICM20602 on SPI4
 
 ### Communication Interfaces
 - **UART7**: Telemetry 1 with hardware flow control
@@ -60,7 +60,6 @@ This document describes the creation of a custom ArduPilot board called "LeoH743
 - Internal flash storage (32KB parameter storage)
 
 ### Other Features
-- MAX7456 OSD chip on SPI2
 - LED indicators (Blue ACT, Green B/E)
 - Buzzer/Beeper support
 - External sensor CS pins
