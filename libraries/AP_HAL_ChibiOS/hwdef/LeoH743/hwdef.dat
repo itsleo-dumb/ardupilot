@@ -211,10 +211,10 @@ BARO BMP280 I2C:0:0x77
 
 define HAL_OS_FATFS_IO 1
 
-# OSD disabled - MAX7456 not used
-define OSD_ENABLED 0
-# define HAL_OSD_TYPE_DEFAULT 1
-# ROMFS_WILDCARD libraries/AP_OSD/fonts/font*.bin
+# MAX7456 OSD chip disabled, but OSD functionality enabled for other backends
+define OSD_ENABLED 1
+define HAL_OSD_TYPE_DEFAULT 0
+ROMFS_WILDCARD libraries/AP_OSD/fonts/font*.bin
 
 # build ABIN for flash-from-bootloader support:
 env BUILD_ABIN True
